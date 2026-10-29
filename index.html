@@ -811,7 +811,7 @@ function renderStats() {
     },
     {
       label: "Recorded payments",
-      value: "₹" + fmt(allReceived()),
+      value: "Rs. " + fmt(allReceived()),
       hint: "Valid numeric entries only",
       icon: "money"
     },
@@ -989,7 +989,7 @@ function renderList(app) {
                 </td>
 
                 <td class="money">
-                  ₹${fmt(sum(s))}
+                  Rs. ${fmt(sum(s))}
                   ${s.p.some(p=>amount(p.a)===null)
                     ? `<div class="subline warning">${icon("alert",12)} Review amount</div>`
                     : ""}
